@@ -11,9 +11,9 @@ When I run junit tests with EclEmma coverage I get the following error:
 
 If you do any of the following the problem goes away:
 
-* Remove the commons-logging `Log` reference from `Bar`.
-* You remove the junit timeout.
-* Remove the createMock(...)
+* Comment out the commons-logging `Log` reference from `Bar`.
+* Remove the junit `@Test` timeout field.
+* Comment out the `createMock(...)` line from the test.
 * Downgrade Junit from 4.13.1 to 4.8.1.
 
 # Running the Tests Using Maven
