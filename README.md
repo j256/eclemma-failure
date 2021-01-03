@@ -1,10 +1,10 @@
-The following is a small test program that demonstrates a strange issue with Junit, Easymock, and Emma.
-Emma is a (usually awesome) coverage tool that runs under eclipse.
+The following is a small test program that demonstrates a strange issue with Junit, Easymock, and EclEmma/Jacoco.
+EclEmma is a (usually awesome) coverage tool that runs under eclipse and maven via jacoco plugin. 
 
 See:
 	https://stackoverflow.com/questions/65511268/getting-a-no-coverage-data-has-been-collected-using-emma-and-eclipse
 
-When I run junit tests with Emma coverage I get the following error:
+When I run junit tests with EclEmma coverage I get the following error:
 
 	No coverage data has been collected during this coverage Session.
 	Please do not terminate the Java process manually from Eclipse.
@@ -15,3 +15,9 @@ If you do any of the following the problem goes away:
 * Remove the createMock(...)
 * Run `createMock(...)` on a more simple object just String or Closeable
 * Downgrade Junit from 4.13.1 to 4.8.1.
+
+# Running the Tests Using Maven
+
+Running `mvn clean test` should run junit and then cause jacoco to produce coverage information in
+`target/site/jacoco`.  If the `createMock(...)` line is commented out then it should show `Foo` has 100% covered.  If
+if it is not commented then it should show `Foo` as completely uncovered although the "hello" message is emmited.
