@@ -14,7 +14,7 @@ If you do any of the following the problem goes away:
 * Comment out the commons-logging `Log` reference from `Bar`.
 * Remove the junit `@Test` timeout field.
 * Comment out the `createMock(...)` line from the test.
-* Downgrade Junit from 4.13.1 to 4.8.1.
+* Downgrade Junit from 4.13.1 to 4.12.
 
 # Running the Tests Using Maven
 
@@ -26,5 +26,5 @@ if it is not commented then it should show `Foo` as completely uncovered althoug
 
 * Eclemma 3.1.3 or jacoco-maven-plugin 0.8.6
 * apache commons-logging version 1.2
-* junit version 4.13.1 (4.8.1 doesn't exhibit this issue)
-* easymock version 3.4
+* junit version 4.13.1 (4.12 doesn't exhibit this issue)
+* easymock version 4.2 (also fails with 3.4 under Java 7)
