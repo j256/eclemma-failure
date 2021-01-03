@@ -1,5 +1,5 @@
-The following is a small test program that demonstrates a strange issue with Junit, Easymock, Commons Logging,
-and EclEmma/Jacoco.  EclEmma is a (usually awesome) coverage tool that runs under eclipse and maven via jacoco plugin. 
+This project demonstrates a strange issue with Junit, Easymock, Commons Logging, and EclEmma/Jacoco.  EclEmma is a
+(usually awesome) coverage tool that runs under eclipse and maven via jacoco plugin. 
 
 See:
 	https://stackoverflow.com/questions/65511268/getting-a-no-coverage-data-has-been-collected-using-emma-and-eclipse
@@ -19,8 +19,8 @@ If you do any of the following the problem goes away:
 # Running the Tests Using Maven
 
 Running `mvn clean test` should run junit and then cause jacoco to produce coverage information in
-`target/site/jacoco`.  If the `createMock(...)` line is commented out then it should show `Foo` has 100% covered.  If
-if it is not commented then it should show `Foo` as completely uncovered although the "hello" message is emmited.
+`target/site/jacoco`.  If the `createMock(...)` line is commented out then it should show `Foo` has 100% coverage.  If
+if it is not commented then it should show `Foo` as completely uncovered although the "hello" message is emitted.
 
 # Dependencies
 
