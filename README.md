@@ -22,3 +22,9 @@ If you do any of the following the problem goes away:
 Running `mvn clean test` should run junit and then cause jacoco to produce coverage information in
 `target/site/jacoco`.  If the `createMock(...)` line is commented out then it should show `Foo` has 100% covered.  If
 if it is not commented then it should show `Foo` as completely uncovered although the "hello" message is emmited.
+
+# Dependencies
+
+* apache commons-logging version 1.2
+* junit version 4.13.1 (4.8.1 doesn't exhibit this issue)
+* easymock version 3.4
