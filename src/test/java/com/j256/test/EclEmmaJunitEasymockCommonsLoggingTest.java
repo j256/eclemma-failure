@@ -4,7 +4,7 @@ import static org.easymock.EasyMock.createMock;
 
 import org.junit.Test;
 
-public class EmmaJunitEasymockTest {
+public class EclEmmaJunitEasymockCommonsLoggingTest {
 
 	// if the timeout is removed here then coverage works
 	@Test(timeout = 100000)
@@ -14,6 +14,6 @@ public class EmmaJunitEasymockTest {
 		new Foo().method();
 
 		// if this is commented out then coverage works
-		createMock(com.amazonaws.AmazonWebServiceClient.class);
+		createMock(Bar.class);
 	}
 }
