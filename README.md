@@ -14,7 +14,6 @@ If you do any of the following the problem goes away:
 * Remove the commons-logging `Log` reference from `Bar`.
 * You remove the junit timeout.
 * Remove the createMock(...)
-* Run `createMock(...)` on a more simple object just String or Closeable
 * Downgrade Junit from 4.13.1 to 4.8.1.
 
 # Running the Tests Using Maven
