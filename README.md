@@ -24,6 +24,7 @@ if it is not commented then it should show `Foo` as completely uncovered althoug
 
 # Dependencies
 
+* Eclemma 3.1.3 or jacoco 0.8.6
 * apache commons-logging version 1.2
 * junit version 4.13.1 (4.8.1 doesn't exhibit this issue)
 * easymock version 3.4
