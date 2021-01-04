@@ -1,7 +1,5 @@
 package com.j256.test;
 
-import static org.easymock.EasyMock.createMock;
-
 import org.junit.Test;
 
 public class EclEmmaFailureTest {
@@ -13,7 +11,6 @@ public class EclEmmaFailureTest {
 		// this line should cover Foo by 100%
 		new Foo().method();
 
-		// if this is commented out then coverage works
-		createMock(Bar.class);
+		org.apache.commons.logging.LogFactory.getLog(getClass());
 	}
 }
