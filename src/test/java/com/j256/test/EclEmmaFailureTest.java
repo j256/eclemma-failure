@@ -11,6 +11,7 @@ public class EclEmmaFailureTest {
 		// this line should cover Foo by 100%
 		new Foo().method();
 
+		// this line seems to disable coverage collection
 		org.apache.commons.logging.LogFactory.getLog(getClass());
 	}
 }
